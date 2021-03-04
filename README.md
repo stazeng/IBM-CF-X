@@ -34,7 +34,7 @@ addEventListener(
 "fetch",event => {
 let url=new URL(event.request.url);
 url.hostname="ibm host address";
-url.pathname = "9b47";
+url.pathname = "ws pathname";
 let request=new Request(url,event.request);
 event. respondWith(
 fetch(request)
