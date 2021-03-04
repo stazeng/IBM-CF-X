@@ -17,7 +17,9 @@
   
 注：VMESS默认的alterId为64
 
+
 CloudFlare的Workers反代，请使用下列脚本：
+<pre name="code" class="javascript">
 addEventListener(
 "fetch",event => {
 let url=new URL(event.request.url);
@@ -29,6 +31,7 @@ fetch(request)
 )
 }
 )
+</pre>
 
 本项目基于P3TERX和ygtsj项目修改而来，感谢两位前辈.
 
