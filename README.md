@@ -25,7 +25,7 @@ let url=new URL(event.request.url);
 url.hostname="ibm host address";
 url.pathname = "ws pathname";
 let request=new Request(url,event.request);
-event. respondWith(
+event.respondWith(
 fetch(request)
 )
 }
